@@ -1,0 +1,7 @@
+round() //method name
+
+1.001 //argument
+
+double //argument type
+
+1.0 //expected result
