@@ -2,8 +2,8 @@
 /**
  * Write a description of class Steve_Driver here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Boop
+ * @version 
  */
 public class Steve_Driver
 {
