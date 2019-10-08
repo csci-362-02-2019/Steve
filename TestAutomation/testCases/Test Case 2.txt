@@ -2,6 +2,4 @@ round()
 
 4
 
-int
-
-null
+4.0
