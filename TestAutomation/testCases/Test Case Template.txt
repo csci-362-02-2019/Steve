@@ -1,7 +1,5 @@
-round() //method name
+//method name
 
-1.001 //argument
+//argument
 
-double //argument type
-
-1.0 //expected result
+//expected result
