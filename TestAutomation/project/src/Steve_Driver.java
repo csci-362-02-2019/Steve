@@ -1,6 +1,6 @@
-package org.glucosio.android.tools;
+//package org.glucosio.android.tools;
 
-import GlucosioConverter.java;
+//import GlucosioConverter.java;
 /**
  * Write a description of class Steve_Driver here.
  *
