@@ -1,0 +1,5 @@
+HOW TO RUN:
+1.Download repository
+2. Run python script from command line using command:
+  python ~/.../Steve/TestAutomation/scripts/runALLTests.py
+3. An HTML report will be saved within Steve/TestAutomation/reports as reports.html and opened
