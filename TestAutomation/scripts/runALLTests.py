@@ -54,7 +54,7 @@ for i in files_list:
         os.chdir("..")
         os.chdir("..")
         os.chdir("reports")
-
+        # i-name,arguments[0]-id,arguments[1]-method,arguments[2]-arg,arguments[3]-oracle
         # This loop prints the results of the driver
         output = p.stdout.read()
         if output.strip() == arguments[3].strip():
