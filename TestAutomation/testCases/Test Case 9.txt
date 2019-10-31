@@ -1,0 +1,4 @@
+04
+glucoseToMgDl
+2
+36.0
