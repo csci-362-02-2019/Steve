@@ -1,0 +1,4 @@
+02
+glucsoseToMmolL
+27.0
+1.5
