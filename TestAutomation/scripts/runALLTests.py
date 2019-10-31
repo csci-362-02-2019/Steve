@@ -63,7 +63,7 @@ for i in files_list:
 
         else:
             #print("fatality" + arguments[2] + " " + output)
-            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td style='color:rgb(255, 0, 0);'>Fail</td></tr>"
+            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td style='background-color:rgb(255, 0, 0);'>Fail</td></tr>"
 
         r.write(reportText)
 
