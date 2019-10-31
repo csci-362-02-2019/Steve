@@ -1,4 +1,4 @@
 02
-glucsoseToMmolL
+glucoseToMmolL
 27.0
 1.5
