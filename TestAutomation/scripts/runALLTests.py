@@ -14,7 +14,7 @@ import webbrowser
 os.chdir("..")
 os.chdir("reports")
 r = open("reports.html", "w")
-htmlOpen = "<html><style>table, th, td {border: 1px solid black;}</style><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th></tr>"
+htmlOpen = "<html><title>GlucosioConverter.java Test</title><h1>GlucosioConverter.java Test</h1><style>table, th, td {border: 1px solid black;}</style><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th></tr>"
 htmlClose = "</table></body></html>"
 r.write(htmlOpen)
 
