@@ -14,7 +14,7 @@ import webbrowser
 os.chdir("..")
 os.chdir("reports")
 r = open("reports.html", "w")
-htmlOpen = "<html><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th></tr>"
+htmlOpen = "<html><style>table, th, td {border: 1px solid black;}</style><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th></tr>"
 htmlClose = "</table></body></html>"
 r.write(htmlOpen)
 
@@ -59,11 +59,11 @@ for i in files_list:
         output = p.stdout.read()
         if output.strip() == arguments[3].strip():
             #print("yes" + arguments[2] + " " + output)
-            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td>Pass</td></tr>"
+            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td style='background-color:rgb(0, 255, 0);'>Pass</td></tr>"
 
         else:
             #print("fatality" + arguments[2] + " " + output)
-            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td>Fail</td></tr>"
+            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td style='color:rgb(255, 0, 0);'>Fail</td></tr>"
 
         r.write(reportText)
 
