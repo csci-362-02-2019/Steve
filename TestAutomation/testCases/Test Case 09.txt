@@ -1,4 +1,4 @@
 09
 glucoseToMgDl
-2
-36.0
+0
+0.0
