@@ -28,8 +28,8 @@ public class Steve_Driver {
 	            
 	            default:
 	            	//argument2=Integer.parseInt(args[2]);
-	                //out = GlucosioConverter.round(argument,2);
-			System.out.println("invalid method called");
+	                out = GlucosioConverter.round(argument,2);
+			//System.out.println("invalid method called");
 	                break;
 	                
 	            case "round":
@@ -59,8 +59,8 @@ public class Steve_Driver {
 	        
 	            }
 	            
-	            System.out.print(out);
-	            System.out.println();
+	            System.out.println(out);
+
 	    }
 }
 
