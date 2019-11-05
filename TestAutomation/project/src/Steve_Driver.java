@@ -48,7 +48,7 @@ public class Steve_Driver {
 	                
 	            case "glucoseToA1C": 
 	            
-	                out = GlucosioConverter.glucoseToMmolL(argument);
+	                out = GlucosioConverter.glucoseToA1C(argument);
 	                break;
 	                
 	            case "a1cToGlucose":
