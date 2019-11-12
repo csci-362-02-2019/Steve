@@ -1,4 +1,4 @@
-15
+05
 glucoseToMmolL
 -30.7
 -1.71

@@ -1,4 +1,4 @@
-10
+05
 glucoseToMgDl
 1.1
 19.8
