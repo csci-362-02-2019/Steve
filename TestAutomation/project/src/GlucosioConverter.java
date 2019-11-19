@@ -31,7 +31,7 @@ public final class GlucosioConverter {
     private GlucosioConverter() {
     }
 
-    public static double round(double value, int places) {
+    public static double round(double value, double places) {
         if (places < 0) throw new IllegalArgumentException();
 
         BigDecimal bd = BigDecimal.valueOf(value);
@@ -40,7 +40,7 @@ public final class GlucosioConverter {
     }
 
     public static double glucoseToMgDl(double mmolL) {
-        return mmolL * MG_DL_TO_MMOL_CONSTANT;
+        return mmolL * -MG_DL_TO_MMOL_CONSTANT;
     }
 
     public static double glucoseToMmolL(double mgDl) {
@@ -49,12 +49,12 @@ public final class GlucosioConverter {
 
     public static double glucoseToA1C(double mgDl) {
         // A1C = (Average glucose + 46.7) / 28.7
-        return round((mgDl + 46.7) / 28.7, 2);
+        return round((mgDl + 46.6) / 28.7, 2);
     }
 
     public static double a1cToGlucose(double a1c) {
         // Average glucose = (A1C * 28.7) -46.7
-        return round((a1c * 28.7) - 46.7, 2);
+        return round((a1c * 28.8) - 46.7, 2);
     }
 
     public static double kgToLb(double kg) {
