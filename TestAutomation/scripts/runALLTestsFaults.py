@@ -14,7 +14,7 @@ from datetime import datetime, date
 os.chdir("..")
 os.chdir("reports")
 r = open("reports.html", "w")
-htmlOpen = "<html><title>GlucosioConverter.java Test</title><center><h1>GlucosioConverter.java Test</h1><style>table, th, td {text-align:center; border: 1px solid black;} th,td{padding: 15px} tr:hover {background-color: lightGray;}</style><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>User Description</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th><th>Date</th><th>Time</th></tr>"
+htmlOpen = "<html><title>GlucosioConverterF.java Test</title><center><h1>GlucosioConverter.java Test</h1><style>table, th, td {text-align:center; border: 1px solid black;} th,td{padding: 15px} tr:hover {background-color: lightGray;}</style><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>User Description</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th><th>Date</th><th>Time</th></tr>"
 htmlClose = "</table></body></center></html>"
 r.write(htmlOpen)
 
@@ -45,7 +45,7 @@ for i in files_list:
         os.chdir("..")
         os.chdir("project")
         os.chdir("src")
-        test_args = 'java Steve_Driver' + ' ' + arguments[1].strip() + " " + arguments[2].strip()
+        test_args = 'java Steve_DriverF' + ' ' + arguments[1].strip() + " " + arguments[2].strip()
 
         # Temp array stores pointers that point to arguments elements without spaces
         temp_array = []
@@ -53,7 +53,7 @@ for i in files_list:
         temp_array.append(arguments[2].strip())
 
         # Call Steve_Driver on command line
-        subprocess.call('javac Steve_Driver.java', stdin=None, stdout=None, stderr=None, shell=True)
+        subprocess.call('javac Steve_DriverF.java', stdin=None, stdout=None, stderr=None, shell=True)
         p = subprocess.Popen('java Steve_DriverF ' + temp_array[0] + ' ' + temp_array[1], shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, close_fds=True)
 
         now = datetime.now()
