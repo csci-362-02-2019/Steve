@@ -7,13 +7,13 @@
  * @author Boop
  * @version 
  */
-public class Steve_DriverOG {
+public class Steve_Driver {
 	    
 
 	    /**
 	     * Constructor for objects of class Steve_Driver
 	     */
-	    public Steve_DriverOG()
+	    public Steve_Driver()
 	    {
 	        
 	    }
@@ -35,27 +35,27 @@ public class Steve_DriverOG {
 	                
 	            case "round":
 	            	//argument2=Integer.parseInt(args[2]);
-			            out = GlucosioConverterOriginal.round(argument,2);
+			            out = GlucosioConverter.round(argument,2);
 	                break;
 	                
 	            case "glucoseToMgDl":
 	            
-	                out = GlucosioConverterOriginal.glucoseToMgDl(argument);
+	                out = GlucosioConverter.glucoseToMgDl(argument);
 	                break;
 	                
 	            case "glucoseToMmolL":
 	           
-			            out = GlucosioConverterOriginal.glucoseToMmolL(argument);
+			            out = GlucosioConverter.glucoseToMmolL(argument);
 	                break;
 	                
 	            case "glucoseToA1C": 
 	            
-			            out = GlucosioConverterOriginal.glucoseToA1C(argument);
+			            out = GlucosioConverter.glucoseToA1C(argument);
 	                break;
 	                
 	            case "a1cToGlucose":
 	            
-			            out = GlucosioConverterOriginal.a1cToGlucose(argument);
+			            out = GlucosioConverter.a1cToGlucose(argument);
 	                break;
 	        
 	            }
