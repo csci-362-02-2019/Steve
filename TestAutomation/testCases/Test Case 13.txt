@@ -2,3 +2,4 @@
 glucoseToMmolL
 31.0
 1.72
+glucoseToMmolL converts the input glucose to MmolL
