@@ -2,3 +2,4 @@
 round
 -3.673458756329457294
 -3.67
+Round accepts a double and rounds it to the nearest hundredth place. If the double has two hanging zeroes the method returns the double with only one.
