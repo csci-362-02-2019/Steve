@@ -2,3 +2,4 @@
 a1cToGlucose
 1.25
 -10.83
+Converts A1C percentage to Glucose level and uses round
