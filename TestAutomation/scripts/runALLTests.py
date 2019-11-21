@@ -7,7 +7,6 @@ Christopher Tucker
 
 import os
 import subprocess
-import shutil
 import webbrowser
 from datetime import datetime, date
 
@@ -15,7 +14,7 @@ from datetime import datetime, date
 os.chdir("..")
 os.chdir("reports")
 r = open("reports.html", "w")
-htmlOpen = "<html><title>GlucosioConverter.java Test</title><center><h1>GlucosioConverter.java Test</h1><style>table, th, td {text-align:center; border: 1px solid black;} th,td{padding: 15px} tr:hover {background-color: lightGray;}</style><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th><th>Date</th><th>Time</th></tr>"
+htmlOpen = "<html><title>GlucosioConverter.java Test</title><center><h1>GlucosioConverter.java Test</h1><style>table, th, td {text-align:center; border: 1px solid black;} th,td{padding: 15px} tr:hover {background-color: lightGray;}</style><head></head><body><table><tr><th>File</th><th>Test ID</th><th>Method</th><th>User Description</th><th>Parameter</th><th>Oracle</th><th>Output</th><th>Result</th><th>Date</th><th>Time</th></tr>"
 htmlClose = "</table></body></center></html>"
 r.write(htmlOpen)
 
@@ -68,11 +67,12 @@ for i in files_list:
         os.chdir("..")
         os.chdir("reports")
 
+
         # This loop prints the results of the driver
         output = p.stdout.read()
         if output.strip() == arguments[3].strip():
             #print("yes" + arguments[2] + " " + output)
-            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[4] +"</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td style='background-color:rgb(0, 255, 0);'>Pass</td><td>" + current_date + "</td><td>" + current_time + "</td></tr>"
+            reportText = "<tr><td>" + i + "</td><td>" + arguments[0] + "</td><td>" + arguments[1] + "</td><td>" + arguments[4] + "</td><td>" + arguments[2] + "</td><td>" + arguments[3] + "</td><td>" + output + "</td><td style='background-color:rgb(0, 255, 0);'>Pass</td><td>" + current_date + "</td><td>" + current_time + "</td></tr>"
 
         else:
             #print("fatality" + arguments[2] + " " + output)
