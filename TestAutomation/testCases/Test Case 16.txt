@@ -2,3 +2,4 @@
 glucoseToA1C
 32.3
 2.75
+Converts Glucose level to A1C and calls round on the result.
