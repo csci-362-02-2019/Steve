@@ -2,3 +2,4 @@
 glucoseToMgDl
 2
 36.0
+glucoseToMgDl converts the input glucose to MgDl
