@@ -35,8 +35,8 @@ files_list = sorted(files_list)
 for i in files_list:
     arguments = []
     # arguments[0] = Test ID
-    # arguments[1] = Method being called (args[0] in Steve_Driver.java)
-    # arguments[2] = Argument being passed into method call in driver (args[1] in Steve_Driver.java)
+    # arguments[1] = Method being called (args[0] in Steve_DriverF.java)
+    # arguments[2] = Argument being passed into method call in driver (args[1] in Steve_DriverF.java)
     # arguments[3] = Oracle
 
     with open(i) as f:
